@@ -1,8 +1,7 @@
-<<<<<<< HEAD
-/* @font-face { 
-    font-family: 'Star Jedi'; src: url('Fonts/Starjedi.ttf'); 
+@font-face { 
     font-family: 'Star Jedi Hollow'; src: url('Fonts/Starjhol.ttf');
-} */
+    font-family: 'Star Jedi'; src: url('Fonts/Starjedi.ttf');
+}
 
 
 label.btn {
@@ -141,10 +140,8 @@ label .glyphicon {
     min-height: 300px
 }
 
-/* .test{
-    font-family: 'Star Jedi Hollow';
+.test{
+    font-family: 'Star Jedi';
     color: red;
     font-size: 50px;
-} */
-=======
->>>>>>> d4746f06d11feff9305ad6208e133d6e197f0dc3
+}
