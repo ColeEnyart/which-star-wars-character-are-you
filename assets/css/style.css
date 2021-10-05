@@ -4,6 +4,12 @@
 }
 
 
+
+.instructor button {
+    display: block;
+    margin: 5px auto;
+}
+
 label.btn {
     padding: 18px 60px;
     white-space: normal;

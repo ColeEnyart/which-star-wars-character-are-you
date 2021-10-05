@@ -1,26 +1,3 @@
-// function testApi(){
-
-//     var queryURL = "httpsL//swapi.dev/api";
-
-//     fetch(queryURL)
-//     .then(function (repsonse) {
-//         return Response.json();
-//     })
-//     .then(function (data){
-//         console.log(data);
-//         testPeople(data);
-//     })
-// }
-
-// function testPeople (data) {
-//     var people = data.people;
-//     console.log(people);
-// }
-
-// testApi();
-
-
-
 const axios = require("axios");
 
 function getAllStarwarsPeople() {
