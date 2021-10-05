@@ -1,29 +1,39 @@
-function testApi() {
+// pages have different load times, page 9 loads quickest (only two characters)
+var key = 10;
 
-    var queryUrl = "https://swapi.dev/api/people/";
-    
-    fetch(queryUrl)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        console.log(data);
-        testPeople(data);
-        getRandomValue(data);
-    })
+function testApi() {
+    for (var i = 1; i < 10; i++) {
+
+        var queryUrl = "https://swapi.dev/api/people/?page=" + i;
+
+        fetch(queryUrl)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                console.log(data.results);
+                key--;
+                localStorage.setItem(key, JSON.stringify(data.results));
+            })
+    }
 }
 
-function getRandomValue(data){
-    var result = data[Math.floor(Math.random() * data.results.length)];
+function testApi2() {
+    for (var i = 1; i < 83; i++) {
 
-    console.log(data.results.length);
-    
-    console.log(result);
-  }
+        var queryUrl = "https://swapi.dev/api/people/" + i;
 
-function testPeople (data) {
-    var people = data.people;
-    console.log(people);  
+        fetch(queryUrl)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+
+                console.log(data);
+
+            })
+    }
 }
 
 testApi();
+/* testApi2(); */
