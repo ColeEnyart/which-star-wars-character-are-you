@@ -1,9 +1,14 @@
+@font-face { 
+    font-family: 'Star Jedi Hollow'; src: url('Fonts/Starjhol.ttf');
+    font-family: 'Star Jedi'; src: url('Fonts/Starjedi.ttf');
+}
+
+
 
 .instructor button {
     display: block;
     margin: 5px auto;
 }
-
 
 label.btn {
     padding: 18px 60px;
@@ -140,3 +145,11 @@ label .glyphicon {
 .modal-body {
     min-height: 300px
 }
+
+.test{
+    font-family: 'Star Jedi';
+    color: red;
+    font-size: 50px;
+}
+
+/* this is a comment */
