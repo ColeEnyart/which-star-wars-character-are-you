@@ -6,6 +6,9 @@ new gridjs.Grid({
         url: 'https://swapi.dev/api/people/?page=1',
         then: data => data.results.map(results => [results.name, results.height, results.mass, results.hair_color, results.skin_color, results.eye_color, results.birth_year, results.gender])
       },
+      className: {
+          table: 'table1'
+        },
     style: {
         td: {
           border: '1px solid #ccc'
@@ -13,6 +16,7 @@ new gridjs.Grid({
         table: {
           'font-size': '15px'
         }},
+        
 }).render(document.getElementById("div1"));
 
 
@@ -29,7 +33,8 @@ style: {
       border: '1px solid #ccc'
     },
     table: {
-      'font-size': '15px'
+      'font-size': '15px',
+      'width': '100%'
     }},
 }).render(document.getElementById("div2"));
 
