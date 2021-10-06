@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
     <title>Encyclopedia</title>
 
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />    
 
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
 </head>
 
 <body class="bg-secondary">
@@ -35,159 +37,35 @@
         </nav>
     </header>
 
+    <div class="buttons">
+        <a  class="showSingle" target="1">Page 1</a>
+        <a  class="showSingle" target="2">Page 2</a>
+        <a  class="showSingle" target="3">Page 3</a>
+        <a  class="showSingle" target="4">Page 4</a>
+        <a  class="showSingle" target="5">Page 5</a>
+        <a  class="showSingle" target="6">Page 6</a>
+        <a  class="showSingle" target="7">Page 7</a>
+        <a  class="showSingle" target="8">Page 8</a>
+        <a  class="showSingle" target="9">Page 9</a>
+    </div>
 
-    <main class="m-5">
-        <table class="table table-striped table-hover table-dark">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Height</th>
-                    <th scope="col">Mass</th>
-                    <th scope="col">Hair Color</th>
-                    <th scope="col">Skin Color</th>
-                    <th scope="col">Eye Color</th>
-                    <th scope="col">Birth Year</th>
-                    <th scope="col">Gender</th>
-                    <th scope="col">Homeworld</th>
-                    <th scope="col">films</th>
-                    <th scope="col">species</th>
-                    <th scope="col">vehicles</th>
-                    <th scope="col">starships</th>
-                    <th scope="col">created</th>
-                    <th scope="col">edited</th>
-                    <th scope="col">url</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Luke Skywalker</td>
-                    <td>172</td>
-                    <td>77</td>
-                    <td>blond</td>
-                    <td>fair</td>
-                    <td>blue</td>
-                    <td>19BBY</td>
-                    <td>male</td>
-                    <td>https://swapi.dev/api/planets/1/</td>
-                    <td>https://swapi.dev/api/films/2/
-                        https://swapi.dev/api/films/6/
-                        https://swapi.dev/api/films/3/
-                        https://swapi.dev/api/films/1/
-                        https://swapi.dev/api/films/7/</td>
-                    <td>https://swapi.dev/api/species/1/</td>
-                    <td>https://swapi.dev/api/vehicles/14/
-                        https://swapi.dev/api/vehicles/30/</td>
-                    <td>https://swapi.dev/api/starships/12/
-                        https://swapi.dev/api/starships/22/</td>
-                    <td>2014-12-09T13:50:51.644000Z</td>
-                    <td>2014-12-20T21:17:56.891000Z</td>
-                    <td>https://swapi.dev/api/people/1/</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>C-3PO</td>
-                    <td>167</td>
-                    <td>75</td>
-                    <td>n/a</td>
-                    <td>gold</td>
-                    <td>yellow</td>
-                    <td>112BBY</td>
-                    <td>n/a</td>
-                    <td>https://swapi.dev/api/planets/1/</td>
-                    <td>https://swapi.dev/api/films/1/
-                        https://swapi.dev/api/films/2/
-                        https://swapi.dev/api/films/3/
-                        https://swapi.dev/api/films/4/
-                        https://swapi.dev/api/films/5/
-                        https://swapi.dev/api/films/6/</td>
-                    <td>https://swapi.dev/api/species/2/</td>
-                    <td>[]</td>
-                    <td>[]</td>
-                    <td>2014-12-10T15:10:51.357000Z</td>
-                    <td>2014-12-20T21:17:50.309000Z</td>
-                    <td>https://swapi.dev/api/people/2/</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>R2-D2</td>
-                    <td>96</td>
-                    <td>32</td>
-                    <td>n/a</td>
-                    <td>white, blue</td>
-                    <td>red</td>
-                    <td>33BBY</td>
-                    <td>n/a</td>
-                    <td>https://swapi.dev/api/planets/8/</td>
-                    <td>https://swapi.dev/api/films/1/
-                        https://swapi.dev/api/films/2/
-                        https://swapi.dev/api/films/3/
-                        https://swapi.dev/api/films/4/
-                        https://swapi.dev/api/films/5/
-                        https://swapi.dev/api/films/6/</td>
-                    <td>https://swapi.dev/api/species/2/</td>
-                    <td>[]</td>
-                    <td>[]</td>
-                    <td>2014-12-10T15:11:50.376000Z</td>
-                    <td>2014-12-20T21:17:50.311000Z</td>
-                    <td>https://swapi.dev/api/people/3/</td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Darth Vader</td>
-                    <td>202</td>
-                    <td>136</td>
-                    <td>none</td>
-                    <td>white</td>
-                    <td>yellow</td>
-                    <td>41.9BBY</td>
-                    <td>male</td>
-                    <td>https://swapi.dev/api/planets/1/</td>
-                    <td>https://swapi.dev/api/films/1/
-                        https://swapi.dev/api/films/2/
-                        https://swapi.dev/api/films/3/
-                        https://swapi.dev/api/films/6/</td>
-                    <td>[]</td>
-                    <td>[]</td>
-                    <td>https://swapi.dev/api/starships/13/</td>
-                    <td>2014-12-10T15:18:20.704000Z</td>
-                    <td>2014-12-20T21:17:50.313000Z</td>
-                    <td>https://swapi.dev/api/people/4/</td>
-                </tr>
-                <tr>
-                    <th scope="row">5</th>
-                    <td>Leia Organa</td>
-                    <td>150</td>
-                    <td>49</td>
-                    <td>brown</td>
-                    <td>light</td>
-                    <td>brown</td>
-                    <td>19BBY</td>
-                    <td>female</td>
-                    <td>https://swapi.dev/api/planets/2/</td>
-                    <td>https://swapi.dev/api/films/1/
-                        https://swapi.dev/api/films/2/
-                        https://swapi.dev/api/films/3/
-                        https://swapi.dev/api/films/6/</td>
-                    <td>[]</td>
-                    <td>https://swapi.dev/api/vehicles/30/</td>
-                    <td>[]</td>
-                    <td>2014-12-10T15:20:09.791000Z</td>
-                    <td>2014-12-20T21:17:50.315000Z</td>
-                    <td>https://swapi.dev/api/people/5/</td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
+
+    <div id="div1" class="targetDiv"></div>
+    <div id="div2" class="targetDiv"></div>
+    <div id="div3" class="targetDiv"></div>
+    <div id="div4" class="targetDiv"></div>
+    <div id="div5" class="targetDiv"></div>
+    <div id="div6" class="targetDiv"></div>
+    <div id="div7" class="targetDiv"></div>
+    <div id="div8" class="targetDiv"></div>
+    <div id="div9" class="targetDiv"></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
 
     <script src="./assets/js/cole.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+    <script src="./assets/js/cassie.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
-
 </html>

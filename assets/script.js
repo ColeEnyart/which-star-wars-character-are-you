@@ -1,43 +1,162 @@
-function testApi() {
-
-    var queryUrl = "https://swapi.dev/api/people/75/";
-
-    fetch(queryUrl)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        console.log(data);
-        testPeople(data);
-    })
-}
-
-function testPeople (data) {
-    var people = data.people;
-    console.log(people);
-
-
-    /* var total_results = []
+new gridjs.Grid({
+    search: true,
+    sort: true,
+    columns: ["Name", "Height", "Mass", "Hair Color", "Skin Color", "Eye Color", "Birth Year", "Gender"],
+    server: {
+        url: 'https://swapi.dev/api/people/?page=1',
+        then: data => data.results.map(results => [results.name, results.height, results.mass, results.hair_color, results.skin_color, results.eye_color, results.birth_year, results.gender])
+      },
+    style: {
+        td: {
+          border: '1px solid #ccc'
+        },
+        table: {
+          'font-size': '15px'
+        }},
+}).render(document.getElementById("div1"));
 
 
-    console.log("Downloading the original search results");
-    var response = "https://swapi.co/api/people/?search=a";
-    var data = response.json();
+new gridjs.Grid({
+search: true,
+sort: true,
+columns: ["Name", "Height", "Mass", "Hair Color", "Skin Color", "Eye Color", "Birth Year", "Gender"],
+server: {
+    url: 'https://swapi.dev/api/people/?page=2',
+    then: data => data.results.map(results => [results.name, results.height, results.mass, results.hair_color, results.skin_color, results.eye_color, results.birth_year, results.gender])
+  },
+style: {
+    td: {
+      border: '1px solid #ccc'
+    },
+    table: {
+      'font-size': '15px'
+    }},
+}).render(document.getElementById("div2"));
 
+new gridjs.Grid({
+search: true,
+sort: true,
+columns: ["Name", "Height", "Mass", "Hair Color", "Skin Color", "Eye Color", "Birth Year", "Gender"],
+server: {
+  url: 'https://swapi.dev/api/people/?page=3',
+  then: data => data.results.map(results => [results.name, results.height, results.mass, results.hair_color, results.skin_color, results.eye_color, results.birth_year, results.gender])
+},
+style: {
+  td: {
+    border: '1px solid #ccc'
+  },
+  table: {
+    'font-size': '15px'
+  }},
+}).render(document.getElementById("div3"));
 
-    var total_results = total_results + data['results'];
+new gridjs.Grid({
+search: true,
+sort: true,
+columns: ["Name", "Height", "Mass", "Hair Color", "Skin Color", "Eye Color", "Birth Year", "Gender"],
+server: {
+  url: 'https://swapi.dev/api/people/?page=4',
+  then: data => data.results.map(results => [results.name, results.height, results.mass, results.hair_color, results.skin_color, results.eye_color, results.birth_year, results.gender])
+},
+style: {
+  td: {
+    border: '1px solid #ccc'
+  },
+  table: {
+    'font-size': '15px'
+  }},
+}).render(document.getElementById("div4"));
 
+new gridjs.Grid({
+search: true,
+sort: true,
+columns: ["Name", "Height", "Mass", "Hair Color", "Skin Color", "Eye Color", "Birth Year", "Gender"],
+server: {
+  url: 'https://swapi.dev/api/people/?page=5',
+  then: data => data.results.map(results => [results.name, results.height, results.mass, results.hair_color, results.skin_color, results.eye_color, results.birth_year, results.gender])
+},
+style: {
+  td: {
+    border: '1px solid #ccc'
+  },
+  table: {
+    'font-size': '15px'
+  }},
+}).render(document.getElementById("div5"));
 
-    while (data['next'] != null) {
+new gridjs.Grid({
+search: true,
+sort: true,
+columns: ["Name", "Height", "Mass", "Hair Color", "Skin Color", "Eye Color", "Birth Year", "Gender"],
+server: {
+  url: 'https://swapi.dev/api/people/?page=6',
+  then: data => data.results.map(results => [results.name, results.height, results.mass, results.hair_color, results.skin_color, results.eye_color, results.birth_year, results.gender])
+},
+style: {
+  td: {
+    border: '1px solid #ccc'
+  },
+  table: {
+    'font-size': '15px'
+  }},
+}).render(document.getElementById("div6"));
 
-        console.log("Next page found, downloading", data['next']);
-        response = data['next'];
-        data = response.json();
+new gridjs.Grid({
+search: true,
+sort: true,
+columns: ["Name", "Height", "Mass", "Hair Color", "Skin Color", "Eye Color", "Birth Year", "Gender"],
+server: {
+  url: 'https://swapi.dev/api/people/?page=7',
+  then: data => data.results.map(results => [results.name, results.height, results.mass, results.hair_color, results.skin_color, results.eye_color, results.birth_year, results.gender])
+},
+style: {
+  td: {
+    border: '1px solid #ccc'
+  },
+  table: {
+    'font-size': '15px'
+  }},
+}).render(document.getElementById("div7"));
 
-        var total_results = total_results + data['results'];
+new gridjs.Grid({
+search: true,
+sort: true,
+columns: ["Name", "Height", "Mass", "Hair Color", "Skin Color", "Eye Color", "Birth Year", "Gender"],
+server: {
+  url: 'https://swapi.dev/api/people/?page=8',
+  then: data => data.results.map(results => [results.name, results.height, results.mass, results.hair_color, results.skin_color, results.eye_color, results.birth_year, results.gender])
+},
+style: {
+  td: {
+    border: '1px solid #ccc'
+  },
+  table: {
+    'font-size': '15px'
+  }},
+}).render(document.getElementById("div8"));
 
-    }
-    console.log("We have", len(total_results), "total results"); */
-}
+new gridjs.Grid({
+search: true,
+sort: true,
+columns: ["Name", "Height", "Mass", "Hair Color", "Skin Color", "Eye Color", "Birth Year", "Gender"],
+server: {
+  url: 'https://swapi.dev/api/people/?page=9',
+  then: data => data.results.map(results => [results.name, results.height, results.mass, results.hair_color, results.skin_color, results.eye_color, results.birth_year, results.gender])
+},
+style: {
+  td: {
+    border: '1px solid #ccc'
+  },
+  table: {
+    'font-size': '15px'
+  }},
+}).render(document.getElementById("div9"));
 
-testApi();
+$('.targetDiv').hide();
+
+jQuery(function() {
+jQuery('.showSingle').click(function() {
+jQuery('.targetDiv').hide();
+jQuery('#div' + $(this).attr('target')).show();
+});
+});
