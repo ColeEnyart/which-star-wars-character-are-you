@@ -14,7 +14,8 @@ new gridjs.Grid({
           border: '1px solid #ccc'
         },
         table: {
-          'font-size': '15px'
+          'font-size': '15px',
+          'width': '100%'
         }},
         
 }).render(document.getElementById("div1"));
@@ -51,7 +52,8 @@ style: {
     border: '1px solid #ccc'
   },
   table: {
-    'font-size': '15px'
+    'font-size': '15px',
+    'width': '100%'
   }},
 }).render(document.getElementById("div3"));
 
@@ -68,7 +70,8 @@ style: {
     border: '1px solid #ccc'
   },
   table: {
-    'font-size': '15px'
+    'font-size': '15px',
+    'width': '100%'
   }},
 }).render(document.getElementById("div4"));
 
@@ -85,7 +88,8 @@ style: {
     border: '1px solid #ccc'
   },
   table: {
-    'font-size': '15px'
+    'font-size': '15px',
+    'width': '100%'
   }},
 }).render(document.getElementById("div5"));
 
@@ -102,7 +106,8 @@ style: {
     border: '1px solid #ccc'
   },
   table: {
-    'font-size': '15px'
+    'font-size': '15px',
+    'width': '100%'
   }},
 }).render(document.getElementById("div6"));
 
@@ -119,7 +124,8 @@ style: {
     border: '1px solid #ccc'
   },
   table: {
-    'font-size': '15px'
+    'font-size': '15px',
+    'width': '100%'
   }},
 }).render(document.getElementById("div7"));
 
@@ -136,7 +142,8 @@ style: {
     border: '1px solid #ccc'
   },
   table: {
-    'font-size': '15px'
+    'font-size': '15px',
+    'width': '100%'
   }},
 }).render(document.getElementById("div8"));
 
@@ -153,7 +160,8 @@ style: {
     border: '1px solid #ccc'
   },
   table: {
-    'font-size': '15px'
+    'font-size': '15px',
+    'width': '100%'
   }},
 }).render(document.getElementById("div9"));
 
