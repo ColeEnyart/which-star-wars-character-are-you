@@ -238,3 +238,23 @@ label .glyphicon {
 text{
     color: white;
 }
+
+footer{
+    position: inherit;
+	width: 100%;
+	left: 0;
+	bottom: 10;
+    /* margin-bottom: 20px; */
+	background-color: #edc531;
+	color: rgb(22, 22, 22);
+	text-align: center;
+}
+
+/* ENCYCLOPEDIA */
+
+.bg-secondary{
+    background-image: url('../images/stars.jpeg');
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
