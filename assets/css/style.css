@@ -257,6 +257,20 @@ footer{
 	text-align: center;
 }
 
+.char-character{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+h5{
+    margin-top: 15px;
+}
+
+.card-img-top{
+    max-width: 50%;
+    margin-left: 24%;
+}
 
 
 
@@ -304,6 +318,7 @@ footer{
     display:flex;
     justify-content: center;
 }
+
 
 
 
