@@ -16,7 +16,7 @@
  
 <!-- NAVIGATION BAR  -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #edc531;">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href= "#">
             <img src="./assets/images/star-wars-icon.jpg" width="30" height="30" alt="">
           </a>     
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,22 +30,26 @@
         </div>
       </nav>
 
+
+
 <!-- FORM CONTAINER -->
-      <main class="d-flex min-vh-100 bg-dark">
+      <main id="main-bg" class="d-flex min-vh-100">
         <div class="container-fluid my-auto">
-          <h1 class="display-2 text-center text-light">STAR WARS QUIZ!</h1>
-          <div class="row justify-content-center">
-            
-            <div class="col-12 col-md-10 col-lg-6 mb-3 p-4 bg-white">
+          <h1 id="quiz-title"class="display-2 text-center text-light">Tell us about you</h1>
+          <div id = "quiz-flex" class="row justify-content-center">
+                    <!-- SIDEBAR PICTURE LEFT -->
+            <img id="kiloren" src="assets/images/kiloren.gif"> 
+            <div id = "quiz-body" class="col-12 col-md-10 col-lg-6 mb-3 p-4">
               <!-- GARY AND GAGE BUTTON SECTION -->
-              <text>Do not take this quiz if you are: </text>
-              <button type="button" class="btn btn-danger">Gary</button>
-              <button type="button" class="btn btn-success">Gage</button>
-              
+            <div class="button-container">
+              <button id = "instructor1" type="button" class="btn btn-danger">Press if Gary</button>
+              <button id = "instructor2" type="button" class="btn btn-success">Press if Gage</button>
+            </div>
+
               <!-- WHERE QUIZ STARTS -->
-              <form>
+              <form id = "form">
                 <div class="form-group">
-                  <label for="exampleFormControlSelect2">When you are in a crowd, do you?
+                  <label class="questions" for="exampleFormControlSelect2">When you are in a crowd, do you?
                   </label>
                   <select multiple class="form-control" id="exampleFormControlSelect2">
                     <option>a. Immediately plan exit strategy!
@@ -55,7 +59,7 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlSelect2">When confronted with a bear, do you?
+                  <label class= "questions" for="exampleFormControlSelect2">When confronted with a bear, do you?
                   </label>
                   <select multiple class="form-control" id="exampleFormControlSelect2">
                     <option>a. Aww, whip out your phone.</option>
@@ -64,7 +68,7 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlSelect2">When you see a puzzle, do you?</label>
+                  <label class= "questions" for="exampleFormControlSelect2">When you see a puzzle, do you?</label>
                   <select multiple class="form-control" id="exampleFormControlSelect2">
                     <option>a. Solve it, duh.</option>
                     <option>b. Ain’t nobody got time for that.</option>
@@ -72,7 +76,7 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlSelect2">When somebody you don’t know waves at  you and starts walking in your direction, do you?
+                  <label class= "questions" for="exampleFormControlSelect2">When somebody you don’t know waves at  you and starts walking in your direction, do you?
                   </label>
                   <select multiple class="form-control" id="exampleFormControlSelect2">
                     <option>a. Awkwardly wave back and internally panic
@@ -82,14 +86,14 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlSelect2">You wake up, and suddenly turn into a wild Gary Talmes, do you?</label>
+                  <label class= "questions" for="exampleFormControlSelect2">You wake up, and suddenly turn into a wild Gary Talmes, do you?</label>
                   <select multiple class="form-control" id="exampleFormControlSelect2">
                     <option>a.  Instantly contact Gage and relentlessly pick on him.</option>
                     <option>b.  Come up with something to make your cohort cry and feed on their pain.</option>
                     
                   </select>
                 </div>
-                
+             
     
                 <div class="form-group form-check">
                   <input type="checkbox" class="form-check-input" id="newsletter-input">
@@ -98,13 +102,29 @@
                 <button type="submit" id ="blastoff" class="btn btn-primary">BLASTOFF!</button>
               </form>
             </div>
+                <!-- <button type="submit" class="btn btn-primary">BLASTOFF!</button> -->
+
+                
+            
+        </div>
+                <!-- SIDEBAR PICTURE RIGHT -->
+                <img id="kiloren" src="assets/images/kiloren.gif">   
           </div>
         </div>
       </main>
 
 
+      
       <script src="./assets/js/cole.js"></script>
       <script src="./assets/js/cassie.js"></script>
       <script src="./assets/js/dami.js"></script>
-</body>
+      
+      
+      
+      
+      <footer>
+          <div>Copyright; 2021 Group 3 Bootcamp</div>
+      </footer>
+      
+    </body>
 </html>
