@@ -265,3 +265,22 @@ footer{
     background-attachment:fixed;
     background-size: cover;
 }
+
+.buttons{
+    display: flex;
+    margin-top: 25px;
+    /* margin-left: 25%;
+    margin-right: auto; */
+    justify-content: center;
+    justify-content: space-around;
+
+
+#button1{
+    color:indigo;
+}
+
+.table1{
+    color: yellow;
+}
+
+
