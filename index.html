@@ -7,8 +7,14 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 
-
     <title>Star Wars</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />    
 </head>
@@ -71,12 +77,12 @@
                   <label class= "questions" for="exampleFormControlSelect2">When you see a puzzle, do you?</label>
                   <select multiple class="form-control" id="exampleFormControlSelect2">
                     <option>a. Solve it, duh.</option>
-                    <option>b. Ain’t nobody got time for that.</option>
+                    <option>b. Ain't nobody got time for that.</option>
                     
                   </select>
                 </div>
                 <div class="form-group">
-                  <label class= "questions" for="exampleFormControlSelect2">When somebody you don’t know waves at  you and starts walking in your direction, do you?
+                  <label class= "questions" for="exampleFormControlSelect2">When somebody you don't know waves at  you and starts walking in your direction, do you?
                   </label>
                   <select multiple class="form-control" id="exampleFormControlSelect2">
                     <option>a. Awkwardly wave back and internally panic
@@ -93,34 +99,41 @@
                     
                   </select>
                 </div>
-             
-    
+
                 <div class="form-group form-check">
                   <input type="checkbox" class="form-check-input" id="newsletter-input">
                   <label class="form-check-label" for="newsletter0input">I have filled this to the best of my knowledge</label>
                 </div>
-                <button type="submit" id ="blastoff" class="btn btn-primary">BLASTOFF!</button>
+                <button type="button" id ="blastoff" class="btn btn-danger btn-lg btn-block character">GENERATE CHARACTER</button>
               </form>
             </div> 
+
             <!-- SIDEBAR PICTURE RIGHT -->
             <img id="kiloren2" src="assets/images/kiloren.gif">   
+
+            <!-- RANDOM CHARACTER GENERATOR -->
+            <div class = "container"></div>
+            <div class="d-flex justify-content-center">
+                    <div class="card text-center text-white bg-transparent mb-3">
+                        <h5 class="card-title name"></h5>
+                        <img src="" class="card-img-top">
+                    </div>
+            </div>
         </div>
           </div>
         </div>
       </main>
 
-
-      
-      <script src="./assets/js/cole.js"></script>
-      <script src="./assets/js/cassie.js"></script>
-      <script src="./assets/js/dami.js"></script>
-      
-      
-      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="./assets/js/character.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
       
       <footer>
           <div>Copyright; 2021 Group 3 Bootcamp</div>
       </footer>
       
     </body>
+</html>
 </html>
