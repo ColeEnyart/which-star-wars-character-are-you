@@ -300,5 +300,10 @@ footer{
   transform: translateY(-0.25em);
 }
 
+#div1,#div2,#div3,#div4{
+    display:flex;
+    justify-content: center;
+}
+
 
 
