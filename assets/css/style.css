@@ -3,13 +3,68 @@
     font-family: 'Star Jedi'; src: url('Fonts/Starjedi.ttf');
 }
 
+#main-bg {
+    background-image: url('../images/stars.jpeg');
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
 
-
-.instructor button {
-    display: block;
-    margin: 5px auto;
-    font-family: 'Star Jedi';
+#instructor1 {
+    display: inline-block;
+    align-content: center;
+    margin: 10px auto;
+    margin-left: 23%;
+    margin-right: 10px;
+    width: 140px;
+    height: 45px;
+    font-family: Star Jedi;
+    font-size: 11px;
     letter-spacing: 2px;
+    color: #000;
+    background-color:#dc3545;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+
+}
+
+#instructor2 {
+    display: inline-block;
+    align-content: center;
+    margin: 10px auto;
+    width: 140px;
+    height: 45px;
+    font-family: Star Jedi;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #000;
+    background-color: #28a745;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+
+}
+#instructor1:hover {
+    background-color: #dc3545;
+    box-shadow: 0px 15px 40px #dc3545;
+    color: #fff;
+    transform: translateY(-7px);
+
+}
+
+#instructor2:hover {
+    background-color: #28a745;
+    box-shadow: 0px 15px 40px #28a745;
+    color: #fff;
+    transform: translateY(-7px);
+
 }
 
 label.btn {
@@ -154,4 +209,19 @@ label .glyphicon {
     font-size: 50px;
 }
 
-/* this is a comment */
+#quiz-title{
+    font-family: 'Star Jedi';
+}
+
+#form{
+    
+}
+
+#quiz-body{
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+text{
+    color: white;
+}
