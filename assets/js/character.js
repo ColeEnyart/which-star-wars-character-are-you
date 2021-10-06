@@ -11,4 +11,35 @@ $btn.on("click", () => {
         });
     $img.show();
     $name.show();
+    addCharacter();
 });
+
+var character = [];
+
+function addCharacter() {
+    const key = 'Character History';
+
+    character.push($name.text());
+    
+    localStorage.setItem(key, JSON.stringify(character));
+    console.log(character);
+    
+}
+
+function displayCharacterHistory() {
+    const key = 'Search History';
+    var characterHistory = JSON.parse(localStorage.getItem(key) || "[]");
+    console.log(characterHistory);
+    var history = [];
+
+    for (var i = 0; i < characterHistory.length; i++) {
+        console.log(history);
+        history.push('<p>' + characterHistory[i] + '</p>');
+    }
+    
+    $('.pastCharacters').html(history);
+}
+
+$(document).ready(function () {
+displayCharacterHistory();
+})
