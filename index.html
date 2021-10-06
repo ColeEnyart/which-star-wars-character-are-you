@@ -22,12 +22,28 @@
  
 <!-- NAVIGATION BAR  -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #edc531;">
-        <a class="navbar-brand" href= "#">
+        <a class="navbar-brand" href= "./index.html">
             <img src="./assets/images/star-wars-icon.jpg" width="30" height="30" alt="">
           </a>     
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
+        <!-- NEW -->
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="p-4">
+            <!-- <h5 class="text-white h4">Collapsed content</h5> -->
+            <a class="navhome" href="index.html">Home</a>
+            <a class="navcyclo" href="encyclopedia.html">Encyclopedia</a>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+        </nav>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
@@ -48,8 +64,12 @@
             <div id = "quiz-body" class="col-12 col-md-10 col-lg-6 mb-3 p-4">
               <!-- GARY AND GAGE BUTTON SECTION -->
             <div class="button-container">
-              <button id = "instructor1" type="button" class="btn btn-danger">Press if Gary</button>
+              <a href="./gary.html">
+                <button id = "instructor1" type="button" class="btn btn-danger">Press if Gary</button>
+              </a>
+              <a href="./gage.html">
               <button id = "instructor2" type="button" class="btn btn-success">Press if Gage</button>
+            </a>
             </div>
 
               <!-- WHERE QUIZ STARTS -->
@@ -134,7 +154,10 @@
       
       <footer>
           <div>Copyright; 2021 Group 3 Bootcamp</div>
+          <h6>About us</h6>
+          <img scr = "https://static.wikia.nocookie.net/starwars/images/9/98/Palpatine-TROS-infobox.jpg/revision/latest/scale-to-width-down/1000?cb=20200401080828">
       </footer>
+      
       
     </body>
 </html>

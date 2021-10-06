@@ -272,6 +272,23 @@ h5{
     margin-left: 24%;
 }
 
+.navhome{
+    padding-right: 10px;
+}
+
+.navhome, .navcyclo{
+    color: white;
+    /* padding-right: 5px; */
+}
+
+.navhome:link, .navcyclo:link, .navhome:visited, .navcyclo:visited{
+    text-decoration: none;
+}
+
+.navhome:active, .navcyclo:active{
+    font-weight: bold;
+}
+
 
 
 /* ENCYCLOPEDIA */
