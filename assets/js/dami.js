@@ -22,7 +22,8 @@ function getRandomCharacter(event){
 
         fetch(requestPeopleURl)
             .then(function (response){
-                return response.json()
+                // return response.json()
+                return response[Math.floor(Math.random()*arr.length)];
             })
             .then( function (data) {
                  console.log(data);

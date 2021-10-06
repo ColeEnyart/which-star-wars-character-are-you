@@ -231,6 +231,13 @@ label .glyphicon {
     max-height: 25%;
 }
 
+#kiloren2{
+    display: flex;
+    justify-content: start;
+    max-width: 25%;
+    max-height: 25%;
+}
+
 .questions{
     font-weight: bold;
 }
