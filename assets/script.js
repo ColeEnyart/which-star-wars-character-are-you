@@ -33,7 +33,8 @@ style: {
       border: '1px solid #ccc'
     },
     table: {
-      'font-size': '15px'
+      'font-size': '15px',
+      'width': '100%'
     }},
 }).render(document.getElementById("div2"));
 
