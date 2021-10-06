@@ -217,10 +217,22 @@ label .glyphicon {
     
 }
 
+
 #quiz-body{
     background-color: rgba(0, 0, 0, 0.1);
     color: white;
 
+}
+
+#kiloren{
+    display: flex;
+    justify-content: start;
+    max-width: 25%;
+    max-height: 25%;
+}
+
+.questions{
+    font-weight: bold;
 }
 
 text{
