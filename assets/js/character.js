@@ -1,5 +1,5 @@
 const $name = $(".name");
-const $img = $("img");
+const $img = $(".card-img-top");
 const $btn = $(".character");
 
 $btn.on("click", () => {
