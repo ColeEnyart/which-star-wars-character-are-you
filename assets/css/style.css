@@ -257,7 +257,13 @@ footer{
 	text-align: center;
 }
 
+
+
+
 /* ENCYCLOPEDIA */
+
+
+
 
 .bg-secondary{
     background-image: url('../images/stars.jpeg');
@@ -269,18 +275,26 @@ footer{
 .buttons{
     display: flex;
     margin-top: 25px;
+    margin-bottom: 25px;
     /* margin-left: 25%;
     margin-right: auto; */
     justify-content: center;
-    justify-content: space-around;
-
-
-#button1{
-    color:indigo;
+    /* justify-content: space-around; */
 }
 
-.table1{
-    color: yellow;
+#button{
+    color:white;
+    background: rgba(0, 0, 0, 0.0);
+    border-color: #edc531;
+    /* text-transform: uppercase; */
+    border-radius: 10px;
+    font-family: Star Jedi;
+    margin-right: 15px;
+    padding: 6px;
+    /* padding-left: 5px; */
 }
+
+
+
 
 
