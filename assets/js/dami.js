@@ -1,19 +1,39 @@
 
+var gageArray = [
+    "https://www.denofgeek.com/wp-content/uploads/2021/06/star-wars-obi-wan-kenobi-set-photos-1.jpg?resize=768%2C432",
+    "https://lumiere-a.akamaihd.net/v1/images/Obi-Wan-Kenobi_6d775533.jpeg?region=0%2C0%2C1536%2C864",
+    "https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/scbfnofizyyojllm_1620036335.jpeg"
+];
 
 
+var garyButtonPress = document.getElementById("instructor1")
+var gageButtonPress = document.getElementById("instructor2")
+    
 
 var buttonPress = document.getElementById("blastoff")
-// console.log (buttonPress)
 
 var keep2 = []
 
-//function getRandomValue(arr) {
-   // 
 
 
 
 
-  function getRandomCharacter(event){
+
+    function getGageRando(gageArray) {
+    for (var i = 1; i < gageArray.length; i++){}   
+        var randomPic = Math.floor(Math.random() * gageArray.length); 
+    //    image.setAttribute("src", gageArray[randomPic]);
+        console.log(result)
+        return result;
+
+    }
+
+
+
+  
+  
+  
+   function getRandomCharacter(event){
     event.preventDefault()
     for (var i = 1; i < keep2.length ; i++){
         var result = keep2[Math.floor(Math.random() * keep2.length)];
@@ -54,14 +74,16 @@ testApi2();
 
 
 
+gageButtonPress.addEventListener("click", getGageRando);
+       
 
 
 
 
-
-
-
-
+garyButtonPress.addEventListener("click", function(){
+    
+    
+})
 
 
 buttonPress.addEventListener("click", getRandomCharacter);
