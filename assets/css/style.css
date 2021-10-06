@@ -257,7 +257,44 @@ footer{
 	text-align: center;
 }
 
+.char-character{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+h5{
+    margin-top: 15px;
+}
+
+.card-img-top{
+    max-width: 50%;
+    margin-left: 24%;
+}
+
+.navhome{
+    padding-right: 10px;
+}
+
+.navhome, .navcyclo{
+    color: white;
+    /* padding-right: 5px; */
+}
+
+.navhome:link, .navcyclo:link, .navhome:visited, .navcyclo:visited{
+    text-decoration: none;
+}
+
+.navhome:active, .navcyclo:active{
+    font-weight: bold;
+}
+
+
+
 /* ENCYCLOPEDIA */
+
+
+
 
 .bg-secondary{
     background-image: url('../images/stars.jpeg');
@@ -265,3 +302,40 @@ footer{
     background-attachment:fixed;
     background-size: cover;
 }
+
+.buttons{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    /* margin-left: 25%;
+    margin-right: auto; */
+    justify-content: center;
+    /* justify-content: space-around; */
+}
+
+#button{
+    color:white;
+    background: rgba(0, 0, 0, 0.0);
+    border-color: #edc531;
+    /* text-transform: uppercase; */
+    border-radius: 10px;
+    font-family: Star Jedi;
+    margin-right: 15px;
+    padding: 6px;
+    /* padding-left: 5px; */
+}
+
+#button:hover,
+#button:focus {
+  box-shadow: 0 0.7em 0.5em -0.4em #edc531 ;
+  transform: translateY(-0.25em);
+}
+
+#div1,#div2,#div3,#div4{
+    display:flex;
+    justify-content: center;
+}
+
+
+
+
