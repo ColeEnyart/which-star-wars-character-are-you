@@ -8,3 +8,7 @@ Create a website that allows user to input info about themselves and find out wh
 
 ## Screen Shot
 
+<img src="./assets/images/star-wars-quiz.png" width="800" />
+<img src="./assets/images/star-wars-encyclopedia.png" width="800" />
+
+
