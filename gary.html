@@ -19,17 +19,27 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />    
 </head>
 <body>
- 
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #edc531;">
-        <a class="navbar-brand" href= "#">
+        <a class="navbar-brand" href= "./index.html">
             <img src="./assets/images/star-wars-icon.jpg" width="30" height="30" alt="">
           </a>     
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="p-4">
+            <a class="navhome" href="index.html">Home</a>
+            <a class="navcyclo" href="encyclopedia.html">Encyclopedia</a>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+        </nav>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" href="./index.html">Home</a>
+            <a class="nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
             <a class="nav-link" href="./encyclopedia.html">Encyclopedia</a>
           </div>
         </div>
