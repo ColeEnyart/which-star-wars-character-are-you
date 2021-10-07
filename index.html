@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-
-
     <title>Star Wars</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />    
+    <link rel="stylesheet" href="./assets/css/reset.css" />
 </head>
 <body>
- 
 <!-- NAVIGATION BAR  -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #edc531;">
-        <a class="navbar-brand" href= "#">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #EDC531;">
+        <a class="navbar-brand" href= "./index.html">
             <img src="./assets/images/star-wars-icon.jpg" width="30" height="30" alt="">
-          </a>     
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          </a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
+        <!-- NEW -->
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="p-4">
+            <!-- <h5 class="text-white h4">Collapsed content</h5> -->
+            <a class="navhome" href="index.html">Home</a>
+            <a class="navcyclo" href="encyclopedia.html">Encyclopedia</a>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
@@ -29,23 +45,23 @@
           </div>
         </div>
       </nav>
-
-
-
 <!-- FORM CONTAINER -->
       <main id="main-bg" class="d-flex min-vh-100">
         <div class="container-fluid my-auto">
           <h1 id="quiz-title"class="display-2 text-center text-light">Tell us about you</h1>
           <div id = "quiz-flex" class="row justify-content-center">
                     <!-- SIDEBAR PICTURE LEFT -->
-            <img id="kiloren" src="assets/images/kiloren.gif"> 
+            <img id="kiloren" src="assets/images/kiloren.gif">
             <div id = "quiz-body" class="col-12 col-md-10 col-lg-6 mb-3 p-4">
               <!-- GARY AND GAGE BUTTON SECTION -->
             <div class="button-container">
-              <button id = "instructor1" type="button" class="btn btn-danger">Press if Gary</button>
+              <a href="./gary.html">
+                <button id = "instructor1" type="button" class="btn btn-danger">Press if Gary</button>
+              </a>
+              <a href="./gage.html">
               <button id = "instructor2" type="button" class="btn btn-success">Press if Gage</button>
+            </a>
             </div>
-
               <!-- WHERE QUIZ STARTS -->
               <form id = "form">
                 <div class="form-group">
@@ -55,7 +71,6 @@
                     <option>a. Immediately plan exit strategy!
                     </option>
                     <option>b. Socialize! More friends!</option>
-                    
                   </select>
                 </div>
                 <div class="form-group">
@@ -64,25 +79,22 @@
                   <select multiple class="form-control" id="exampleFormControlSelect2">
                     <option>a. Aww, whip out your phone.</option>
                     <option>b. Run faster than the guy next to you.</option>
-                    
                   </select>
                 </div>
                 <div class="form-group">
                   <label class= "questions" for="exampleFormControlSelect2">When you see a puzzle, do you?</label>
                   <select multiple class="form-control" id="exampleFormControlSelect2">
                     <option>a. Solve it, duh.</option>
-                    <option>b. Ain’t nobody got time for that.</option>
-                    
+                    <option>b. Ain't nobody got time for that.</option>
                   </select>
                 </div>
                 <div class="form-group">
-                  <label class= "questions" for="exampleFormControlSelect2">When somebody you don’t know waves at  you and starts walking in your direction, do you?
+                  <label class= "questions" for="exampleFormControlSelect2">When somebody you don't know waves at  you and starts walking in your direction, do you?
                   </label>
                   <select multiple class="form-control" id="exampleFormControlSelect2">
                     <option>a. Awkwardly wave back and internally panic
                     </option>
                     <option>b. Relish the opportunity to show you Pokémon cards to an unsuspecting victim</option>
-                    
                   </select>
                 </div>
                 <div class="form-group">
@@ -90,30 +102,29 @@
                   <select multiple class="form-control" id="exampleFormControlSelect2">
                     <option>a.  Instantly contact Gage and relentlessly pick on him.</option>
                     <option>b.  Come up with something to make your cohort cry and feed on their pain.</option>
-                    
                   </select>
                 </div>
-             
-    
                 <div class="form-group form-check">
                   <input type="checkbox" class="form-check-input" id="newsletter-input">
                   <label class="form-check-label" for="newsletter0input">I have filled this to the best of my knowledge</label>
                 </div>
-                <button type="submit" class="btn btn-primary">BLASTOFF!</button>
-
-                
-            </form>
+                <button type="button" id ="blastoff" class="btn btn-danger btn-lg btn-block character">GENERATE CHARACTER</button>
+              </form>
+            </div>
+            <!-- SIDEBAR PICTURE RIGHT -->
+            <img id="kiloren2" src="assets/images/kiloren.gif">
+            <!-- RANDOM CHARACTER GENERATOR -->
+            <div class = "char-container"></div>
+            <div>
+                    <div class="card text-center text-white bg-transparent mb-3">
+                        <h5 class="card-title name"></h5>
+                        <img src="" class="card-img-top">
+                    </div>
+            </div>
         </div>
-                <!-- SIDEBAR PICTURE RIGHT -->
-                <img id="kiloren" src="assets/images/kiloren.gif">   
           </div>
         </div>
       </main>
-
-      
-      <footer>
-          <div>Copyright; 2021 Group 3 Bootcamp</div>
-      </footer>
     
       
       <script src="./assets/js/cole.js"></script>
@@ -121,3 +132,4 @@
       
     </body>
 </html>
+
