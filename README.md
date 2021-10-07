@@ -13,5 +13,5 @@ Cassie Meyer, Cole Enyart, Dami Osinubi and Jack Theisen
 
 See attached screenshots of website below:
 
-![Screenshot 1](./assets/images/star-wars-quiz.png)
-![Screenshot 1](./assets/images/star-wars-encyclopedia.png)
+![Screenshot 1](./assets/images/star-wars-quiz-updated.png)
+![Screenshot 1](./assets/images/star-wars-encyclopedia-updated.png)
